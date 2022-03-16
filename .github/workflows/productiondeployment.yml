@@ -42,20 +42,20 @@ build-and-deploy-webapp:
 
     # Setup .NET Core SDK
     - name: Setup .NET Core
-        uses: actions/setup-dotnet@v1
-        with:
+      uses: actions/setup-dotnet@v1
+      with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
 
     # Run dotnet build and publish on the project
     - name: dotnet build web portal and publish
-        run: |
+      run: |
         dotnet build ${{ env.AZURE_WEBAPP_PROJECT_NAME }} --configuration Release
         dotnet publish ${{ env.AZURE_WEBAPP_PROJECT_NAME }} -c Release -o './webdeploy'
 
     # Deploy to Azure Application Service
     - name: 'Deploy public web portal'
-        uses: azure/webapps-deploy@v2
-        with:
+      uses: azure/webapps-deploy@v2
+      with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
         package: './webdeploy'
@@ -69,33 +69,33 @@ build-and-deploy-admin:
 
     # Setup .NET Core SDK
     - name: Setup .NET Core
-        uses: actions/setup-dotnet@v1
-        with:
+      uses: actions/setup-dotnet@v1
+      with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
 
     # Run dotnet build and publish
     - name: dotnet build web portal and publish on the project
-        run: |
+      run: |
         dotnet build ${{ env.AZURE_ADMINAPP_PROJECT_NAME }} --configuration Release
         dotnet publish ${{ env.AZURE_ADMINAPP_PROJECT_NAME }} -c Release -o './admindeploy'
 
     # Login to Azure
     - name: Login via Az module
-        uses: azure/login@v1.1
-        with:
+      uses: azure/login@v1.1
+      with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
     # Deploy to Azure Application Service
     - name: 'Deploy admin web portal'
-        uses: azure/webapps-deploy@v2
-        with:
+      uses: azure/webapps-deploy@v2
+      with:
         app-name: ${{ env.AZURE_ADMINAPP_NAME }}
         credentials: ${{ secrets.AZURE_CREDENTIALS }}
         package: './admindeploy'
 
     ##Azure logout
     - name: logout
-        run: |
+      run: |
         az logout
 
 # Build and deploy the Payments API using the Publish Profile
@@ -107,20 +107,20 @@ build-and-deploy-payment-api:
 
     # Setup .NET Core SDK
     - name: Setup .NET Core
-        uses: actions/setup-dotnet@v1
-        with:
+      uses: actions/setup-dotnet@v1
+      with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
 
     # Run dotnet build and publish on the project
     - name: dotnet build web portal and publish
-        run: |
+      run: |
         dotnet build ${{ env.AZURE_API_PAYMENT_PROJECT_NAME }} --configuration Release
         dotnet publish ${{ env.AZURE_API_PAYMENT_PROJECT_NAME }} -c Release -o './paymentapideploy'
 
     # Deploy to Azure App Service 
     - name: 'Deploy payments API'
-        uses: azure/webapps-deploy@v2
-        with:
+      uses: azure/webapps-deploy@v2
+      with:
         app-name: ${{ env.AZURE_API_PAYMENT_NAME }}
         publish-profile: ${{ env.AZURE_API_PAYMENT_PUBLISH_PROFILE }}
         package: './paymentapideploy'
@@ -134,20 +134,20 @@ build-and-deploy-offer-api:
 
     # Setup .NET Core SDK
     - name: Setup .NET Core
-        uses: actions/setup-dotnet@v1
-        with:
+      uses: actions/setup-dotnet@v1
+      with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
 
     # Run dotnet build and publish on the project
     - name: dotnet build web portal and publish
-        run: |
+      run: |
         dotnet build ${{ env.AZURE_API_OFFERS_PROJECT_NAME }} --configuration Release
         dotnet publish ${{ env.AZURE_API_OFFERS_PROJECT_NAME }} -c Release -o './offerapideploy'
 
     # Deploy to Azure App Service
     - name: 'Deploy offers API'
-        uses: azure/webapps-deploy@v2
-        with:
+      uses: azure/webapps-deploy@v2
+      with:
         app-name: ${{ env.AZURE_API_OFFERS_NAME }}
         publish-profile: ${{ env.AZURE_API_OFFERS_PUBLISH_PROFILE }}
         package: './offerapideploy'
@@ -161,19 +161,19 @@ build-and-deploy-pdffunctionapp:
 
     # Setup .NET Core SDK
     - name: Setup .NET Core
-        uses: actions/setup-dotnet@v1
-        with:
+      uses: actions/setup-dotnet@v1
+      with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
 
     # Run dotnet build and publish on the project
     - name: dotnet build web portal and publish
-        run: |
+      run: |
         dotnet build ${{ env.AZURE_FUNCTIONAPP_PROJECT_NAME  }} --configuration Release
         dotnet publish ${{ env.AZURE_FUNCTIONAPP_PROJECT_NAME  }} -c Release -o './pdfappdeploy'
 
     - name: 'Deploy to Azure Function App service'
-        uses: Azure/functions-action@v1
-        with:
+      uses: Azure/functions-action@v1
+      with:
         app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
         package: './pdfappdeploy'
         publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
