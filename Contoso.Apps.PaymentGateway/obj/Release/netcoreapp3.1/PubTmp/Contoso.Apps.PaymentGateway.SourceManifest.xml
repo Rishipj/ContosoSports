@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\MCW\MCW-Modern-cloud-apps-main\Hands-on lab\lab-files\src\Contoso Sports League\Contoso.Apps.PaymentGateway\obj\Release\netcoreapp3.1\PubTmp\Out\" />
+</sitemanifest>

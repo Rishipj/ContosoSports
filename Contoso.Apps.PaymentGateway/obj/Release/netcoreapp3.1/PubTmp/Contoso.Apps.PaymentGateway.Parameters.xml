@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="contososportspaymentgatewayk6qz5y53gve6s" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\MCW\\MCW-Modern-cloud-apps-main\\Hands-on\ lab\\lab-files\\src\\Contoso\ Sports\ League\\Contoso\.Apps\.PaymentGateway\\obj\\Release\\netcoreapp3\.1\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>

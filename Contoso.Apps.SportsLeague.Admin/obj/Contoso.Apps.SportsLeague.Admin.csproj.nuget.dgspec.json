@@ -1,0 +1,226 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\MCW\\MCW-Modern-cloud-apps-main\\Hands-on lab\\lab-files\\src\\Contoso Sports League\\Contoso.Apps.SportsLeague.Admin\\Contoso.Apps.SportsLeague.Admin.csproj": {}
+  },
+  "projects": {
+    "C:\\MCW\\MCW-Modern-cloud-apps-main\\Hands-on lab\\lab-files\\src\\Contoso Sports League\\Contoso.Apps.Common\\Contoso.Apps.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MCW\\MCW-Modern-cloud-apps-main\\Hands-on lab\\lab-files\\src\\Contoso Sports League\\Contoso.Apps.Common\\Contoso.Apps.Common.csproj",
+        "projectName": "Contoso.Apps.Common",
+        "projectPath": "C:\\MCW\\MCW-Modern-cloud-apps-main\\Hands-on lab\\lab-files\\src\\Contoso Sports League\\Contoso.Apps.Common\\Contoso.Apps.Common.csproj",
+        "packagesPath": "C:\\Users\\demouser\\.nuget\\packages\\",
+        "outputPath": "C:\\MCW\\MCW-Modern-cloud-apps-main\\Hands-on lab\\lab-files\\src\\Contoso Sports League\\Contoso.Apps.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\demouser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\MCW\\MCW-Modern-cloud-apps-main\\Hands-on lab\\lab-files\\src\\Contoso Sports League\\Contoso.Apps.SportsLeague.Admin\\Contoso.Apps.SportsLeague.Admin.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MCW\\MCW-Modern-cloud-apps-main\\Hands-on lab\\lab-files\\src\\Contoso Sports League\\Contoso.Apps.SportsLeague.Admin\\Contoso.Apps.SportsLeague.Admin.csproj",
+        "projectName": "Contoso.Apps.SportsLeague.Admin",
+        "projectPath": "C:\\MCW\\MCW-Modern-cloud-apps-main\\Hands-on lab\\lab-files\\src\\Contoso Sports League\\Contoso.Apps.SportsLeague.Admin\\Contoso.Apps.SportsLeague.Admin.csproj",
+        "packagesPath": "C:\\Users\\demouser\\.nuget\\packages\\",
+        "outputPath": "C:\\MCW\\MCW-Modern-cloud-apps-main\\Hands-on lab\\lab-files\\src\\Contoso Sports League\\Contoso.Apps.SportsLeague.Admin\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\demouser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\MCW\\MCW-Modern-cloud-apps-main\\Hands-on lab\\lab-files\\src\\Contoso Sports League\\Contoso.Apps.Common\\Contoso.Apps.Common.csproj": {
+                "projectPath": "C:\\MCW\\MCW-Modern-cloud-apps-main\\Hands-on lab\\lab-files\\src\\Contoso Sports League\\Contoso.Apps.Common\\Contoso.Apps.Common.csproj"
+              },
+              "C:\\MCW\\MCW-Modern-cloud-apps-main\\Hands-on lab\\lab-files\\src\\Contoso Sports League\\Contoso.Apps.SportsLeague.Data\\Contoso.Apps.SportsLeague.Data.csproj": {
+                "projectPath": "C:\\MCW\\MCW-Modern-cloud-apps-main\\Hands-on lab\\lab-files\\src\\Contoso Sports League\\Contoso.Apps.SportsLeague.Data\\Contoso.Apps.SportsLeague.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[3.1.18, )"
+            },
+            "Microsoft.Azure.AppConfiguration.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\MCW\\MCW-Modern-cloud-apps-main\\Hands-on lab\\lab-files\\src\\Contoso Sports League\\Contoso.Apps.SportsLeague.Data\\Contoso.Apps.SportsLeague.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MCW\\MCW-Modern-cloud-apps-main\\Hands-on lab\\lab-files\\src\\Contoso Sports League\\Contoso.Apps.SportsLeague.Data\\Contoso.Apps.SportsLeague.Data.csproj",
+        "projectName": "Contoso.Apps.SportsLeague.Data",
+        "projectPath": "C:\\MCW\\MCW-Modern-cloud-apps-main\\Hands-on lab\\lab-files\\src\\Contoso Sports League\\Contoso.Apps.SportsLeague.Data\\Contoso.Apps.SportsLeague.Data.csproj",
+        "packagesPath": "C:\\Users\\demouser\\.nuget\\packages\\",
+        "outputPath": "C:\\MCW\\MCW-Modern-cloud-apps-main\\Hands-on lab\\lab-files\\src\\Contoso Sports League\\Contoso.Apps.SportsLeague.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\demouser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
